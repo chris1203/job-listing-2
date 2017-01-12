@@ -6,6 +6,7 @@
     <thead>
         <tr>
             <td>职缺</td>
+            <td> 收到履历数量</td>
             <td>薪资下限</td>
             <td>薪资上限</td>
             <td>管理选项</td>
@@ -18,6 +19,7 @@
           <%= render_job_status(job) %>
           <%= link_to(job.title, admin_job_path(job)) %>
         </td>
+        <td> <%= link_to(job.resumes.count, admin_job_resumes_path(job)) %> </td>
         <td> <%= job.wage_lower_bound %> </td>
         <td> <%= job.wage_upper_bound %> </td>
         <td>
