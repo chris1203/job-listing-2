@@ -1,0 +1,7 @@
+<div class="row job-item">
+	<div class="col-md-6">
+		<h4 class="job-title"><%= link_to(job.title, job_path(job)) %></h4>
+		<%= job.wage_lower_bound %>-<%= job.wage_upper_bound %> | <%= job.created_at %> 
+	</div>
+</div>
+<hr>
