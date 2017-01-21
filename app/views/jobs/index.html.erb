@@ -25,6 +25,7 @@
             <td>薪资下限</td>
             <td>薪资上限</td>
             <td>刊登时间</td>
+            <td>申请</td>
         </tr>
 
     </thead>
@@ -42,6 +43,13 @@
             </td>
             <td>
                 <%= job.created_at %>
+            </td>
+            <td>
+                <% if current_user && current_user.has_applied?(job) %>
+                    <%= link_to("Has Applied", new_job_resume_path(job), class: "btn btn-info btn-sm disabled", method: :get) %>
+                <% else %>
+                     <%= link_to("Quick Apply", new_job_resume_path(job), class: "btn btn-info btn-sm",   method: :get) %>
+                <% end %>
             </td>
         </tr>
         <% end %>

@@ -1,0 +1,5 @@
+<% @jobs.each do |job| %>
+  <p><%= link_to(job.title, job_path(job)) %></p>
+  <p>Salary: <%= job.wage_lower_bound %> ~ <%= job.wage_upper_bound %> </p>
+  <p><%= job.contact_email %></p>
+<% end %>
