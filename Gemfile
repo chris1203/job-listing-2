@@ -40,6 +40,8 @@ gem 'simple_form'
 gem 'carrierwave'
 gem 'font-awesome-rails'
 gem 'ransack'
+gem 'greensock-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

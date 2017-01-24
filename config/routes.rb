@@ -2,11 +2,11 @@ Rails.application.routes.draw do
   devise_for :users
   resources :jobs do
     resources :resumes
-    collection do 
+    collection do
       get :search
     end
   end
-  root 'jobs#index'
+  root 'welcome#index'
   namespace :admin do
     resources :jobs do
       member do
