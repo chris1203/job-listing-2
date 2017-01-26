@@ -15,7 +15,12 @@
 //= require turbolinks
 //= require bootstrap/alert
 //= require bootstrap/dropdown
-//= require 'greensock/TweenMax'
+//= require jquery-ui
+//= require jquery.ui.touch-punch
+//= require greensock/plugins/ScrambleTextPlugin
+//= require greensock/plugins/Physics2DPlugin
+//= require greensock/utils/SplitText
+//= require greensock/TweenMax
 //= require_tree .
 
 

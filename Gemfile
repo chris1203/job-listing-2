@@ -40,7 +40,10 @@ gem 'simple_form'
 gem 'carrierwave'
 gem 'font-awesome-rails'
 gem 'ransack'
-gem 'greensock-rails'
+gem 'greensock-rails', '~> 1.19'
+gem 'touchpunch-rails'
+gem 'jquery-ui-rails'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
