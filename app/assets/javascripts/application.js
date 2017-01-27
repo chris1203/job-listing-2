@@ -10,19 +10,19 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-ui
+//= require jquery.ui.touch-punch
 //= require bootstrap/alert
 //= require bootstrap/dropdown
-//= require js/jquery.min.js
-//= require js/jquery-ui.js
-//= require js/jquery.ui.touch-punch.min.js
-//= require gs/ScrambleTextPlugin.js
-//= require gs/Physics2DPlugin.js
-//= require gs/SplitText.js
-//= require gs/TextPlugin.js
-//= require gs/TweenMax.js
+//= require greensock/TweenMax
+//= require greensock/plugins/ScrambleTextPlugin
+//= require greensock/plugins/Physics2DPlugin
+//= require greensock/utils/SplitText
+//= require greensock/plugins/TextPlugin
 //= require_tree .
 
 /*
